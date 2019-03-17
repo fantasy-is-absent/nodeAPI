@@ -1,4 +1,4 @@
-const rozklad = require('node-rozklad-api')
+const rozklad = require('node-rozklad-api');
 
 module.exports = {
   async getScheduleGroup(group) {
@@ -19,4 +19,4 @@ module.exports = {
     const schedule = await this.getCurrentWeekScheduleGroup(group);
     return schedule.days[currDay];
   },
-}
+};

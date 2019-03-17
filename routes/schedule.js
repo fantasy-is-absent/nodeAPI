@@ -1,5 +1,5 @@
-const asyncMiddleWare = require('../utils/asyncMiddleWare')
-const schedule = require('../services/schedule')
+const asyncMiddleWare = require('../utils/asyncMiddleWare');
+const schedule = require('../services/schedule');
 
 module.exports = (router) => {
   router.get('/api/schedule/group/:numberGroup', asyncMiddleWare(async (req, res) => {
